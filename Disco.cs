@@ -9,11 +9,11 @@ namespace EjercicioColeccionista
         private Artista artista;
         private List<Tema> temas;
 
-        public Disco(string nombre, 
-            int lanzamiento, 
-            string genero, 
-            string selloDiscografico, 
-            string nombreArtista, 
+        public Disco(string nombre,
+            int lanzamiento,
+            string genero,
+            string selloDiscografico,
+            string nombreArtista,
             string nacionalidadArtista)
         {
             this.nombre = nombre;
@@ -28,5 +28,7 @@ namespace EjercicioColeccionista
         {
             this.temas.Add(tema);
         }
+
+        public string Nombre => this.nombre;
     }
 }
